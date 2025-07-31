@@ -1,0 +1,16 @@
+.headerContainer{
+    padding: 1rem;
+    background-color: darkslateblue;
+    color: white;
+}
+
+.linkContainer{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+a{
+    all: unset;
+    font-size: 1.5rem;
+}

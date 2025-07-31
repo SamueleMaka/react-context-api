@@ -1,0 +1,32 @@
+.cardContainer{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: #dbeff8;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    padding: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.imageContainer{
+    background-color: white;
+}
+.dataContainer{
+    padding: 1rem;
+    text-align: center;
+    color: #5a4e4d;
+}
+h3{
+    color: red;
+}
+
+.textContainer{
+    padding: 1rem;
+    text-align: center;
+}
