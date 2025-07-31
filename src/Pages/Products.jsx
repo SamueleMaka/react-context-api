@@ -2,23 +2,17 @@ import { useState, useEffect} from "react"
 import "./Common.css"
 import axios from "axios"
 import ProductCard from "./ProductCard"
+import { useProduct } from "../Contexts/ProductContext"
+
 
 function Products() {
-    const URL_API = "https://fakestoreapi.com/products"
-    const [product, setProduct] = useState([])
-
-    useEffect(()=>{
-        axios.get(URL_API).then(res=>{
-            const productData = res.data
-            setProduct(productData)
-        })
-    },[])
+    const {products} = useProduct();
 
     return(
         <>
             <div className="containerProducts">
                 {
-                    product.map((product) => {
+                    products.map((product) => {
                         return(
                             <ProductCard 
                                 key={product.id}

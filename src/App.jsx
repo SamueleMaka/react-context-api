@@ -5,10 +5,12 @@ import Home from "../src/Pages/Home"
 import AboutUs from "../src/Pages/AboutUs"
 import Products from "../src/Pages/Products"
 import SingleProduct from './Pages/SingleProduct'
+import { ProductProvider } from './Contexts/ProductContext'
 function App() {
   
   return (
     <>
+    <ProductProvider>
       <BrowserRouter>
         <Routes>
           <Route Component={Layout}>
@@ -19,6 +21,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+    </ProductProvider>
     </>
   )
 }
